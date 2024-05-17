@@ -1,6 +1,16 @@
 .imgLogoSvg {
   width: 250px;
 }
+.contenedor-experiencia {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+.experiencia,
+.anios {
+  font-size: 80px;
+  margin: 0;
+}
 #logo-ar-construcciones .ar {
   position: absolute;
   opacity: 1;
