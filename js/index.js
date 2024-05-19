@@ -7,13 +7,16 @@ const CheckReload = (() => {
         return counter;
     };
 })();
-const refreshId = setInterval(
-    () => {
-        const properID = CheckReload();
-        experiencia.innerHTML = properID
-        if (properID > 44) {
-            clearInterval(refreshId);
-        }
-    },
-    50
-);
+
+setTimeout(() => {
+    const refreshId = setInterval(
+        () => {
+            const properID = CheckReload();
+            experiencia.innerHTML = properID
+            if (properID > 44) {
+                clearInterval(refreshId);
+            }
+        },
+        50
+    );
+}, "2000");

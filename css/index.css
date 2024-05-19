@@ -9,6 +9,9 @@
   border-left: solid 2px #e0e0e0;
   margin-left: 15px;
   padding-bottom: 10px;
+  opacity: 0;
+  animation-delay: 2s !important;
+  animation: ocultarMostar 4s ease-in-out forwards;
 }
 .experiencia {
   text-align: right;
@@ -62,10 +65,16 @@
   fill-opacity: 0;
   animation: arStroke 4s ease-in-out forwards;
 }
-.opacity-0 {
-  opacity: 0;
-  stroke: #ffffff;
+
+@keyframes ocultarMostar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
+
 @keyframes arStroke {
   0% {
     fill: #d80915;
