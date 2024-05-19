@@ -35,7 +35,6 @@
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: bold;
-
   margin-bottom: 0;
 }
 #logo-ar-construcciones .ar {
@@ -156,5 +155,21 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 550px) {
+  .imgLogoSvg {
+    width: 130px;
+  }
+  .experiencia {
+    width: 60px;
+    font-size: 50px;
+  }
+  .anios {
+    font-size: 50px;
+  }
+  .contenedor-experiencia .item .slogan {
+    font-size: 10px;
   }
 }
