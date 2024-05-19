@@ -12,7 +12,8 @@
 }
 .experiencia {
   text-align: right;
-  padding-right: 10px;
+  width: 80px;
+  padding-right: 5px;
   font-size: 60px;
   font-weight: 600;
   margin: 0;
@@ -31,7 +32,7 @@
   margin-top: -15px;
 }
 .contenedor-experiencia .item .slogan {
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 2px;
   font-weight: bold;
 
@@ -49,16 +50,38 @@
   fill-opacity: 0;
   animation: arStroke 4s ease-in-out forwards;
 }
-
+#logo-ar-construcciones .ar-r {
+  position: absolute;
+  opacity: 1;
+  animation-delay: 1s !important;
+  fill: #d80915;
+  transform-box: fill-box;
+  transform-origin: center;
+  stroke: none;
+  stroke-width: 2;
+  stroke-dasharray: 2000;
+  fill-opacity: 0;
+  animation: arStroke 4s ease-in-out forwards;
+}
+.opacity-0 {
+  opacity: 0;
+  stroke: #ffffff;
+}
 @keyframes arStroke {
   0% {
+    fill: #d80915;
+    stroke: #d80915;
     stroke-dashoffset: 2000;
   }
   60% {
+    fill: #d80915;
+    stroke: #d80915;
     stroke-dashoffset: 0;
     fill-opacity: 0;
   }
   100% {
+    fill: #d80915;
+    stroke: #d80915;
     stroke-dashoffset: 0;
     fill-opacity: 1;
   }
